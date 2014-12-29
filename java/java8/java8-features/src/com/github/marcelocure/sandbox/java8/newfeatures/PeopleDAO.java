@@ -1,4 +1,4 @@
-package com.github.marcelocure.sandbox.java8;
+package com.github.marcelocure.sandbox.java8.newfeatures;
 
 import java.util.Arrays;
 import java.util.List;

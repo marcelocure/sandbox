@@ -1,4 +1,4 @@
-package com.github.marcelocure.sandbox.java8;
+package com.github.marcelocure.sandbox.java8.newfeatures;
 
 public class FunctionalInterfaces {
 

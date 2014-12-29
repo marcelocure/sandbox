@@ -1,6 +1,7 @@
-package com.github.marcelocure.sandbox.java8;
+package com.github.marcelocure.sandbox.java8.newfeatures;
 
 import java.util.List;
+
 
 public class FilterMapForEach {
     public static void main(String[] args) {
