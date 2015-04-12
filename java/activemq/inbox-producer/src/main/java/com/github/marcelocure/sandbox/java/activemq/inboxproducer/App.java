@@ -1,13 +1,15 @@
 package com.github.marcelocure.sandbox.java.activemq.inboxproducer;
 
-import com.github.marcelocure.sandbox.java.activemq.inboxcommons.MailMessage;
 
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		InboxMessageProducer inboxMessageProducer = new InboxMessageProducer();
 		System.out.println("Sending message to queue");
-		MailInputMessageBuilder mailInputMessageBuilder = new MailInputMessageBuilder();
-		MailInputMessage mailInputMessage = mailInputMessageBuilder.buildQueue("inbox").buildUserName("mcure").buildMessage(new MailMessage("mcure","kzenki", "luv ya", "I fucking love you")).build();
-		inboxMessageProducer.produce(mailInputMessage);
+		MailInputMessageDao mailInputMessageDao = new MailInputMessageDao();
+		
+		for (MailInputMessage mailInputMessage : mailInputMessageDao.buildInputMessages()) {
+			Thread.sleep(2000);
+			inboxMessageProducer.produce(mailInputMessage);
+		}
 	}
 }
