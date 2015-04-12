@@ -1,4 +1,4 @@
-package com.github.marcelocure.sandbox.java.activemq.inboxproducer;
+package com.github.marcelocure.sandbox.java.activemq.inboxproducer.connect;
 
 import javax.jms.Connection;
 import javax.jms.JMSException;
