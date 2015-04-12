@@ -20,7 +20,7 @@ public class InboxMessageProducer {
 			Destination destination = session.createQueue(mailInputMessage.getQueue());
 			MessageProducer producer = session.createProducer(destination);
 			producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
-			ObjectMessage message = session.createObjectMessage(mailInputMessage);
+			ObjectMessage message = session.createObjectMessage(mailInputMessage.getMessage());
 			producer.send(message);
 			session.close();
 			connection.close();
