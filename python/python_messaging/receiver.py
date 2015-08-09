@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import pika
 
-class Sender(object):
+class Receiver(object):
 	def __init__(self):
 		self.connection = None
 		self.channel = None
@@ -10,12 +10,13 @@ class Sender(object):
 		self.connection = pika.BlockingConnection(pika.ConnectionParameters(host=host))
 		self.channel = self.connection.channel()
 
-	def create_queue(self, queue_name):
-		self.channel.queue_declare(queue=queue_name)
+	def callback(self, ch, method, properties, body):
+	    print " Received:  %r" % (body,)
 
-	def send_message(self, queue_name, message):
-		self.channel.basic_publish(exchange='', routing_key=queue_name, body=message)
-		print 'message sent successfully'
+	def receive(self, queue_name):
+		print 'press ctrl+c to abort'
+		self.channel.basic_consume(self.callback, queue=queue_name, no_ack=True)
+		self.channel.start_consuming()
 
 	def disconnect(self):
 		self.connection.close()
