@@ -3,14 +3,14 @@ from sender import Sender
 from receiver import Receiver
 
 def main():
-	sender = Sender('localhost')
-	sender.connect()
+	sender = Sender()
+	sender.connect('localhost')
 	sender.create_queue('inbox')
 	sender.send_message('inbox', 'hello')
 	sender.disconnect()
 
-	receiver = Receiver('localhost')
-	receiver.connect()
+	receiver = Receiver()
+	receiver.connect('localhost')
 	receiver.receive('inbox')
 	receiver.disconnect()
 
