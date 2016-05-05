@@ -1,2 +1,2 @@
-var producer = require('./producer'),
-    consumer = require('./consumer');
+var producer = require('./app/producer'),
+    consumer = require('./app/consumer');
