@@ -1,0 +1,16 @@
+{
+  "name": "test-node-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "author": "Marcelo Cure",
+  "license": "ISC",
+  "dependencies": {
+    "fuzzy-scheduler": "^1.0.0",
+    "node-schedule": "^1.1.0"
+  }
+}
