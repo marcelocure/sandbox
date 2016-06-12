@@ -4,12 +4,15 @@
   "description": "project to test an express ws and do contract tests with cucumberjs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./node_modules/cucumber/bin/cucumber.js",
     "start": "node ./app.js"
   },
   "author": "Marcelo Cure",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "chai": "^3.5.0",
+    "cucumber": "^0.5.3",
+    "express": "^4.13.4",
+    "http-as-promised": "^1.1.0"
   }
 }
