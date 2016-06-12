@@ -1,0 +1,15 @@
+{
+  "name": "test-express-cucumberjs",
+  "version": "1.0.0",
+  "description": "project to test an express ws and do contract tests with cucumberjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
+  },
+  "author": "Marcelo Cure",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
