@@ -8,7 +8,6 @@ var $http = require('http-as-promised'),
 
 module.exports = function() {
     this.Before(function(callback){
-        console.log(callback);
         require('../../app');
         callback();
     });
@@ -24,12 +23,12 @@ module.exports = function() {
         return $http[testVerb](url)
         .then( res => {
             responseBody = res[0].body;
-            statusCode = res[0].statusCode;
+            statusCode = res[0].statusCode.toString();
         })
     });
 
-    this.Then(/^I receive the adequate response$/, function (callback) {
-        expect(statusCode).to.equal(200);
+    this.Then(/^I receive the adequate response with http status (.*)$/, function (status, callback) {
+        expect(statusCode).to.equal(status);
         callback();
     });
 };

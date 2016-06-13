@@ -7,6 +7,7 @@ app.get('/bands', function(req, res) {
 });
 
 app.post('/bands', function(req, res) {
+    res.status(201);
     res.json(req.body);
 });
 
