@@ -4,7 +4,7 @@ var $http = require('http-as-promised'),
     responseBody,    
     statusCode,
     testVerb,
-    testEndpoint;
+    testEndpoint
 
 module.exports = function() {
     this.Before(function(callback){
@@ -28,6 +28,8 @@ module.exports = function() {
     });
 
     this.Then(/^I receive the adequate response with http status (.*)$/, function (status, callback) {
+        var bands = require('../fixtures/'+testEndpoint+'.fixtures.js');
+        expect(bands).to.include.keys(bands);
         expect(statusCode).to.equal(status);
         callback();
     });

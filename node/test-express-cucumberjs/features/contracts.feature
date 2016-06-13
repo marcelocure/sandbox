@@ -9,5 +9,5 @@ Feature: Client friendliness
     Then I receive the adequate response with http status <status>
   Examples:
     | verb | endpoint | status |
-    | GET  | bands/   | 200    |
-    | POST | bands/   | 201    |
+    | GET  | bands    | 200    |
+    | POST | bands    | 201    |
