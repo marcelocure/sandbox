@@ -1,0 +1,79 @@
+[{
+	"_id": "ab702fc4-467d-4cc6-8ba9-e1d283bc4a33",
+	"name": "AC/DC"
+}, {
+	"_id": "32398b1e-53d8-4c0a-99c0-2c7567b900e7",
+	"name": "Beatles"
+}, {
+	"_id": "1fff2e4e-05bd-4b95-b4fb-60afd6ca4f8a",
+	"name": "Creedence"
+}, {
+	"_id": "91686299-b091-43b9-987b-169e8730ce6c",
+	"name": "Deep Purple"
+}, {
+	"_id": "4e0ce5b5-8ff9-4a32-b38a-4dbfbc50faea",
+	"name": "Eagles"
+}, {
+	"_id": "09cb0a34-60c6-40e0-8d14-528ccf9c852e",
+	"name": "Foo Fighters"
+}, {
+	"_id": "bfc46b3d-5e0f-4643-9a08-262750bc6b6c",
+	"name": "Guns n' Roses"
+}, {
+	"_id": "b35da787-1926-4664-aebc-938fa7e1efc4",
+	"name": "Helicopters"
+}, {
+	"_id": "4a3b75e7-2d83-48e0-b37e-cab6e53cb57e",
+	"name": "Iron Maiden"
+}, {
+	"_id": "dfa9ae90-6872-437d-90ff-86116d711343",
+	"name": "Jimi Hendrix"
+}, {
+	"_id": "a2907b3e-f598-4dfe-bce2-f3a3832466c2",
+	"name": "KISS"
+}, {
+	"_id": "93487e5c-e797-4f12-b146-289ca4ae0416",
+	"name": "Lynyrd Skynyrd"
+}, {
+	"_id": "8dbab583-ac65-448b-a625-79753aa1c72f",
+	"name": "Motorhead"
+}, {
+	"_id": "f69db34d-552f-44c5-928d-0b2868666f32",
+	"name": "Neil Young"
+}, {
+	"_id": "fced1949-2196-4659-a837-a8ef03bce0bd",
+	"name": "Oasis"
+}, {
+	"_id": "3877d759-9d2b-4731-83a0-f82b9012b856",
+	"name": "Pink Floyd"
+}, {
+	"_id": "57dd48b6-2c51-4a7d-ac0d-7710f830b145",
+	"name": "Queen"
+}, {
+	"_id": "89a1052f-09dd-4586-add5-211e175604b2",
+	"name": "Rush"
+}, {
+	"_id": "251ff9d9-15b4-4f7d-b982-931bfa189972",
+	"name": "Scorpions"
+}, {
+	"_id": "be5654c0-cae4-49f8-bfbf-a09bc6a0c20a",
+	"name": "Tenacious D"
+}, {
+	"_id": "05a01da4-a6d5-48fa-862e-a72965a08230",
+	"name": "Ultraje a Rigor"
+}, {
+	"_id": "f3ff61de-c0e0-4366-ad75-3385a9340e39",
+	"name": "Velhas Virgens"
+}, {
+	"_id": "f55b6604-dcd1-4168-943a-eb682901d3a6",
+	"name": "Wander Wildner"
+}, {
+	"_id": "73b45a86-f8a4-44a4-991a-19826fab7b22",
+	"name": "X Avenger"
+}, {
+	"_id": "22472d11-a225-4390-9f27-fd2f9ba8f2c0",
+	"name": "Yes"
+}, {
+	"_id": "1aeb5726-2f95-4db9-8dc1-707f54dbb467",
+	"name": "ZZ Top"
+}]
