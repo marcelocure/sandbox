@@ -1,10 +1,8 @@
-/*
-* More details here http://mongoosejs.com/docs/guide.html
-*/
+var mongoose = require('mongoose'),
+    config = require('../config');
+    db = mongoose.connect(config.connectionString);
 
-var mongoose = require('mongoose');
-
-var orderEvent = new mongoose.Schema({ 
+var bandsEventsSchema = new mongoose.Schema({ 
     data:
     {
         type: {type:String},
@@ -13,11 +11,8 @@ var orderEvent = new mongoose.Schema({
             eventType: String,
             eventDate: Date,
             body: {}
-        },
-        relationships: {
-            aggregationRoots: [{}]
         }
     }
 })
 
-module.exports = mongoose.model('orderEvent', orderEvent); 
+module.exports = db.model('bandsEvents', bandsEventsSchema);

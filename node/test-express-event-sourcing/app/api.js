@@ -21,8 +21,8 @@ function requireFolder(folderName) {
     });
 }
 console.log('loading resources');
-// requireFolder('routes');
+requireFolder('routes');
 requireFolder('models');
-// requireFolder('eventHandlers');
+requireFolder('eventHandlers');
 
 harvesterApp.listen(config.port, () => console.log('listening on port ' + config.port));
