@@ -1,5 +1,5 @@
 var queue_name = 'tasks';
-    connection = require('amqpConnection')
+    connection = require('../amqpConnection')
  
 connection
 .then(function(conn) {

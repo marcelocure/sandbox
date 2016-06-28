@@ -1,8 +1,9 @@
 var queue_name = 'order-cancel';
  
-var connection = require('amqpConnection')
+var connection = require('../amqpConnection')
  
-connections.then(function(conn) {
+connection
+.then(function(conn) {
     return conn.createChannel();
 })
 .then(function(channel) {
