@@ -1,0 +1,14 @@
+{
+  "name": "npm_yarn_benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcelo Cure",
+  "license": "ISC",
+  "dependencies": {
+    "rmdir": "^1.2.0"
+  }
+}
