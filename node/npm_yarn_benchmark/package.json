@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./benchmark_npm_yarn.js"
+    "start": "node ./index.js"
   },
   "author": "Marcelo Cure",
   "license": "ISC",
