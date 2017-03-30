@@ -7,11 +7,10 @@ export JAVA_HOME="/usr/lib/jvm/java-8-oracle/"
 export USE_MQ="true"
 alias build="docker-compose build ; docker-compose up"
 alias up="docker-compose -f docker-compose-local.yml up -d"
-alias vpn='(echo -e "t00thbrush@2017" & cat) | sudo openconnect navpn.agcocorp.com -u "curem" --passwd-on-stdin'
 alias fuse-log='function _parseLog(){ zcat $1 | sed -r "s/.*line\":(.*),\"host.*/\1/" | bunyan | subl - ;};_parseLog'
 alias run-tests='docker-compose build ; docker-compose up'
 alias kill-containers='docker kill $(docker ps -a -q) ; docker rm $(docker ps -a -q)'
-alias restart-api-qa='heroku ps:scale web=0 -a fuse-features-api-qa ; sleep 5 ; heroku ps:scale web=1 -a fuse-features-api-qa'
+alias restart-api-qa='heroku ps:scale web=0 -a <app> ; sleep 5 ; heroku ps:scale web=1 -a <app>'
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
