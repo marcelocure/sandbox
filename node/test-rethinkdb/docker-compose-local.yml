@@ -1,0 +1,7 @@
+rdb:
+  log_driver: "none"
+  image: rethinkdb
+  entrypoint: "rethinkdb"
+  net: "host"
+  expose:
+    - "28015"

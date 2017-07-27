@@ -1,0 +1,13 @@
+rdb:
+  log_driver: "none"
+  image: rethinkdb
+  entrypoint: "rethinkdb"
+  expose:
+    - "28015"
+web:
+  build: .
+  environment:
+    RETHINK_HOST: 'rdb'
+  command: npm start
+  links:
+    - rdb
