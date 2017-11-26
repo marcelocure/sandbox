@@ -1,0 +1,5 @@
+web:
+  build: .
+  command: npm start
+  environment:
+    TELEMETRY_API_URL: 'http://localhost:4040'
